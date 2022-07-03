@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+html {
+    width: 100%;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    color: #000000;
+font-family: 'Rubik', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Стили контейнера */
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* Стили кноки */
+.t-btn {
+    padding: 16px 10px;
+    width: 200px;
+    color: #fff;
+    background: #FFAF50;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    transition: 220ms;
+    cursor: pointer;
+}
+.t-btn:hover {
+    background: #3157E1;
+}
+
+
+
+/* Стили подзаголовка */
+.subtitle {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+}
+
+/* Стили заголовка */
+.title {
+    font-weight: 600;
+    color: #000000;
+    font-size: 22px;
+    line-height: 30px;
+}
+.t-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 62px;
+    letter-spacing: -2.4px;
+    color: #000000;
+}
+
+
+
+/* Шапка */
+.header {
+    padding: 57px 0 80px;
+    width: 100%;
+}
+/* Футер */
+.footer {
+    padding: 30px 0;
+    width: 100%;
+}
+.header .container, .footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header__menu .link {
+    margin-left:25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header__menu .link:hover {
+    color: #345DEE;
+    text-decoration: underline;
+}
+
+
+/* Первый блок */
+.intro-section {
+    padding-bottom: 125px;
+}
+.intro-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-section .title {
+    width: 580px;
+    max-width: 100%;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -3px;
+
+}
+.intro-section .subtitle {
+    width: 485px;
+    max-width: 100%;
+    margin: 40px 0 36px;
+}
+
+.advantages-section {
+    padding: 120px 0;
+}
+.advantages-img {
+    margin: 40px 0;
+}
+.advantages__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.advantages__items .item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 32%;
+}
+
+.advantages__items .text {
+    margin-left: 16px;
+}
+.advantages__items .title {
+    margin-bottom: 6px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.55px;
+}
+
+
+/* Третий блок */
+.news-section {
+    padding: 120px 0;
+}
+.news-section .subtitle {
+    margin: 16px 0 54px;
+}
+.news__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.news__items .item {
+    width: 23.5%;
+}
+.news-img {
+    height: 340px;
+    width: 100%;
+    background: #FFAF50;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+.news__items .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.55px;
+}
+.news__items .title:hover {
+    text-decoration: underline;
+}
+.news__items .subtitle {
+    margin: 6px 0 0;
+}
+
+
+/* Четвертый блок */
+
+.faq-section {
+    padding: 120px 0;
+}
+
+.faq__items {
+    margin: 55px 0 0;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.faq__items .item {
+    width: 32%;
+    margin-bottom: 50px;
+}
+
+.faq__items .item .title {
+    margin: 16px 0 4px;
+}
+
+
+/* Пятый блок */
+.reviews-section {
+    padding: 120px 0;
+}
+.reviews__items {
+    margin: 25px 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.reviews__items .item {
+    padding: 22px;
+    width: 32%;
+    border: 2px solid #DFE4EA;
+    border-radius: 8px;
+    position: relative;
+}
+/* прикрепляем ссылку в угол с помощью позиционирования */
+.reviews__items .item .social {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.reviews__items .head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.reviews__items .head .text {
+    margin-left: 15px;
+}
+.reviews__item .title {
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.reviews__items .head .subtitle {
+    font-size: 14px;
+}
+
+
+
+/* Контакты */
+.contacts-section {
+    padding: 120px 0;
+}
+.contacts-section .title {
+    font-size: 56px;
+    line-height: 62px;
+
+}
+
+
+/* Тут переписываем стили для мобильных телефонов */
+@media screen and (max-width : 767px) {
+    /* Шапка */
+    .header {
+        padding: 30px 0 50px;
+    }
+    .header__logo {
+        width: 60px;
+    }
+    .footer {
+        padding: 50px 0 20px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .container {
+        flex-wrap: wrap !important;
+        display: block;
+    }
+    .title {
+        max-width: 95%;
+    }
+    section {
+        padding: 40px 0 !important;
+        width: 100%;    
+    }
+    .intro-section {
+        padding: 0 0 40px !important;
+    }
+    .intro-section .container {
+        display: block;
+    }
+    .intro-section .title {
+        font-size: 32px;
+        line-height: 1.15;
+        letter-spacing: 0px;
+    }
+    .intro-section .subtitle {
+        margin: 20px 0 25px;
+    }
+    .intro-section .intro__right {
+        display: none;
+    }
+
+    /* Стили подзаголовка */
+    .subtitle {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .t-title br {
+        display: none;
+    }
+    .subtitle br {
+        display: none;
+    }
+    
+    /* Стили заголовка */
+    .title {
+        font-weight: 600;
+        color: #18214D;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .t-title {
+        font-size: 32px;
+        letter-spacing: 0px;
+        line-height: 1.15;
+    }
+    .advantages-img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .advantages__items, .news__items, .reviews__items {
+        display: block;
+    }
+    .advantages__items .icon {
+        width: 40px;
+        flex-shrink: 0;
+    }
+    .advantages__items .item, .news__items .item, .reviews__items .item {
+        margin-bottom: 30px;
+    }
+    .advantages__items .title {
+        font-size: 19px;
+        line-height: 26px;
+    }
+    .item {
+        width: 100% !important;
+    }
+
+    /* Новости */
+    .news-img {
+        height: 200px;
+    }
+}
